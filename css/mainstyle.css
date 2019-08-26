@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100vw;
+	width: 100vw;
+}
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+	margin: 1.5em;
+	overflow-y: hidden;
+	cursor: url(img/cursor.png), pointer;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0em;
+	width: 100%;
+    background-color: white;
+    z-index: 2;
+    margin-right: 3em;
+}
+
+.bio {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	margin-bottom: 1.5em;
+	margin-top: 1em;
+}
+
+.name {
+	margin-right: 2em;
+}
+
+.name, .contactbox {
+	flex-grow: 1;
+}
+
+.contact {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+}
+
+.cv, .insta {
+	margin-right: 1.5em;
+}
+
+.mail {
+	margin-right: 3em;
+}
+
+.contact a:hover {
+	text-decoration: underline;
+}
+
+
+.foot {
+	font-size: 1em;
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: normal;
+}
+
+.phonemenu {
+	display: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	height: 100vh;
+	position: relative;
+	width: 100%;
+	will-change: overflow; 
+}
+
+.item {
+	width: 50%;
+}
+
+.answers, .q {
+	overflow-y: auto;
+	height: 87%;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+}
+
+.q::-webkit-scrollbar {
+	display: none;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 3em;
+	margin-top: -0.2em;
+}
+
+ul {
+	list-style-type: decimal;
+	font-size: 3em;
+	padding-left: 1.2em;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	font-weight: normal;
+}
+
+li a:hover {
+	color: lightgrey;
+}
+
+li p {
+	font-weight: normal;
+	font-size: 3em;
+}
+
+.fillbox {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1em;
+	color: lightgrey;
+	width: 8em;
+	border: none;
+ 	border-bottom: 1.4px solid black;
+}
+
+p {
+	hyphens: none;
+}
+
+
+@media (max-width:950px) {
+	.bio {
+	flex-wrap: wrap;
+	}
+
+	.contact {
+		margin-top: 0.5em;
+	}
+
+	.contact a {
+		text-decoration: underline;
+	}
+
+	.contact a:hover {
+		text-decoration: none;
+	}
+
+	h2 {
+		font-weight: normal;
+		font-size: 2em;
+		margin-top: -0.2em;
+	}
+
+	ul {
+	list-style-type: decimal;
+	font-size: 2em;
+	padding-left: 1.2em;
+	}
+
+	li a {
+		text-decoration: none;
+		color: black;
+		font-weight: normal;
+	}
+
+	li a:hover {
+		color: black;
+	}
+
+	li p {
+		font-weight: normal;
+		font-size: 2em;
+	}
+
+	.answers {
+		display: none;
+	}
+
+	.item {
+		width: 90%;
+	}
+
+}
+
+@media (max-width:700px) {
+	.contact {
+		justify-content: flex-start;
+	}
+
+}
+
+
+
+
