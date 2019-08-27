@@ -1,50 +1,62 @@
+/* bases*/
+
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
 	height: 100vw;
 	width: 100vw;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	font-family: 'IBM Plex Sans', sans-serif;
-	margin: 1.5em;
 	overflow-y: hidden;
-	cursor: url(img/cursor.png), pointer;
+	margin: 0;
+	padding: 0;
 }
 
+/* FOOTER */
 
 footer {
 	position: fixed;
-	bottom: 0em;
 	width: 100%;
-    background-color: white;
-    z-index: 2;
-    margin-right: 3em;
+	bottom: 0em;
+	margin: 1em;
+    z-index: 10;
 }
+
+/* Bio*/
 
 .bio {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: flex-end;
-	margin-bottom: 1.5em;
-	margin-top: 1em;
 }
 
-.name {
-	margin-right: 2em;
+h1 {
+	font-size: 1em;
+	font-weight: normal;
 }
 
 .name, .contactbox {
 	flex-grow: 1;
 }
 
+/* Contact*/
+
 .contact {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
+}
+
+.contact a:hover {
+	text-decoration: underline;
 }
 
 .cv, .insta {
@@ -55,50 +67,54 @@ footer {
 	margin-right: 3em;
 }
 
-.contact a:hover {
-	text-decoration: underline;
-}
-
-
 .foot {
 	font-size: 1em;
 	text-decoration: none;
 	color: black;
 }
 
-h1 {
-	font-size: 1em;
-	font-weight: normal;
-}
+/* phone menu hidden*/
 
 .phonemenu {
 	display: none;
 }
 
+/* Container */
+
 .container {
 	display: flex;
 	flex-wrap: nowrap;
 	overflow: hidden;
-	height: 100vh;
+	height: 93vh;
 	position: relative;
 	width: 100%;
 	will-change: overflow; 
+	z-index: 1;
 }
 
 .item {
 	width: 50%;
 }
 
-h2 {
-	font-weight: normal;
-	font-size: 3em;
-	margin-top: -0.2em;
+.answers, .q {
+	overflow-y: auto;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: none;
+}
+
+/* Question */
+
+.q::-webkit-scrollbar {
+	display: none;
 }
 
 ul {
 	list-style-type: decimal;
 	font-size: 3em;
-	padding-left: 1.2em;
+	padding-left: 1.5em;
+	padding-top: 0.2em;
+	padding-bottom: 1em;
 }
 
 li a {
@@ -111,39 +127,19 @@ li a:hover {
 	color: lightgrey;
 }
 
-li p {
-	font-weight: normal;
-	font-size: 3em;
-}
 
-.fillbox {
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-size: 1em;
-	color: lightgrey;
-	width: 7.5em;
-	border: none;
- 	border-bottom: 1.4px solid black;
-}
-
-.answers, .q {
-	overflow-y: auto;
-	height: 87%;
-	-webkit-overflow-scrolling: touch;
-	-ms-overflow-style: none;
-}
+/* Answers */
 
 .answers {
 	direction: rtl;
 	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-top: 0.6em;
 	border-left: solid lightgrey 1.4px;
 }
 
 .otherway {
 	direction: ltr;
-}
-
-.q::-webkit-scrollbar {
-	display: none;
 }
 
 .answers::-webkit-scrollbar {
@@ -153,6 +149,8 @@ li p {
 .answers::-webkit-scrollbar-thumb {
   	background: black;
 }
+
+/* texts style*/
 
 h3 {
 	font-size: 3em;
@@ -167,30 +165,135 @@ h4 {
 
 .answers p {
 	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 
 p {
 	hyphens: none;
 }
 
+/* img*/
 
 img {
-	width: 48vw;
+	width: 47vw;
 	height: auto;
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
+	vertical-align: middle;
+}
+
+.zoom {
+
+}
+
+/* video*/
+
+iframe {
+	width: 48vw;
+	margin-bottom: 2em;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
-
+/* IPAD and IPHONE*/
 
 @media (max-width:950px) {
-	.bio {
-	flex-wrap: wrap;
-	}
+	/* footer*/
 
-	.contact {
-		margin-top: 0.5em;
+	.bio {
+		flex-wrap: wrap;
 	}
 
 	.contact a {
@@ -201,6 +304,30 @@ img {
 		text-decoration: none;
 	}
 
+	/* phone menu showing */
+
+	.phonemenu {
+		display: inline-block;
+		position: fixed;
+		text-decoration: none;
+		margin: 1em;
+		z-index: 9;
+	}
+
+	.menu {
+		color: lightgrey;
+		text-decoration: underline;
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	/*Container*/
+
+	.container {
+		height: 94vh;
+	}
+
+	/*Question*/
 
 	.q {
 		display: none;
@@ -210,36 +337,53 @@ img {
 		width: 90%;
 	}
 
+	/*Question*/
+
 	.answers {
-		height: 79%;
+		padding-top: 3.5em;
 	}
 
-	.phonemenu {
-		display: block;
-		text-decoration: none;
+	.answers::-webkit-scrollbar {
+		display: none;
 	}
 
-	.menu {
-		color: lightgrey;
-		font-size: 1.5em;
-		margin-bottom: 1em;
+	h3 {
+		text-align: center;
 	}
+
+	/*image*/
 
 	img {
-		margin-top: 1em;
+		width: 90vw;
+		margin: auto;
+		display: block;
+	}
+
+	.zoom {
 		margin-bottom: 1em;
+	}
+
+	/*video*/
+
+	iframe {
 		width: 80vw;
+		margin-bottom: 2em;
+		margin: auto;
+		display: block;
 	}
 
 }
 
+/*IPHONE SPECIAL*/
+
 @media (max-width:700px) {
+	
 	.contact {
 		justify-content: flex-start;
 	}
 
-	.answers {
-		height: 77%;
+	.container {
+		height: 90vh;
 	}
 
 }

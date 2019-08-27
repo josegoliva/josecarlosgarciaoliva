@@ -1,3 +1,5 @@
+/* bases*/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,45 +8,54 @@
 html {
 	height: 100vw;
 	width: 100vw;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	font-family: 'IBM Plex Sans', sans-serif;
-	margin: 1.5em;
 	overflow-y: hidden;
-	cursor: url(img/cursor.png), pointer;
+	margin: 0;
+	padding: 0;
 }
 
+/* FOOTER */
 
 footer {
 	position: fixed;
-	bottom: 0em;
 	width: 100%;
-    background-color: white;
-    z-index: 2;
-    margin-right: 3em;
+	bottom: 0em;
+	margin: 1em;
+    z-index: 10;
 }
+
+/* Bio*/
 
 .bio {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: flex-end;
-	margin-bottom: 1.5em;
-	margin-top: 1em;
 }
 
-.name {
-	margin-right: 2em;
+h1 {
+	font-size: 1em;
+	font-weight: normal;
 }
 
 .name, .contactbox {
 	flex-grow: 1;
 }
 
+/* Contact*/
+
 .contact {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
+}
+
+.contact a:hover {
+	text-decoration: underline;
 }
 
 .cv, .insta {
@@ -55,43 +66,28 @@ footer {
 	margin-right: 3em;
 }
 
-.contact a:hover {
-	text-decoration: underline;
-}
-
-
 .foot {
 	font-size: 1em;
 	text-decoration: none;
 	color: black;
 }
 
-h1 {
-	font-size: 1em;
-	font-weight: normal;
-}
-
-.phonemenu {
-	display: none;
-}
+/* Questions*/
 
 .container {
 	display: flex;
 	flex-wrap: nowrap;
-	overflow: hidden;
-	height: 100vh;
+	top: 0;
+	height: 93vh;
 	position: relative;
 	width: 100%;
-	will-change: overflow; 
+	z-index: 1;
 }
 
-.item {
-	width: 50%;
-}
-
-.answers, .q {
+.q {
 	overflow-y: auto;
-	height: 87%;
+	width: 100%;
+	padding-right: 50%;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: none;
 }
@@ -100,16 +96,12 @@ h1 {
 	display: none;
 }
 
-h2 {
-	font-weight: normal;
-	font-size: 3em;
-	margin-top: -0.2em;
-}
-
 ul {
 	list-style-type: decimal;
 	font-size: 3em;
-	padding-left: 1.2em;
+	padding-left: 1.5em;
+	padding-top: 0.2em;
+	padding-bottom: 1em;
 }
 
 li a {
@@ -122,16 +114,10 @@ li a:hover {
 	color: lightgrey;
 }
 
-li p {
-	font-weight: normal;
-	font-size: 3em;
-}
-
 .fillbox {
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 1em;
-	color: lightgrey;
-	width: 8em;
+	width: 6.5em;
 	border: none;
  	border-bottom: 1.4px solid black;
 }
@@ -141,13 +127,14 @@ p {
 }
 
 
-@media (max-width:950px) {
-	.bio {
-	flex-wrap: wrap;
-	}
+/* IPAD and IPHONE*/
 
-	.contact {
-		margin-top: 0.5em;
+@media (max-width:950px) {
+	
+	/* footer*/
+
+	.bio {
+		flex-wrap: wrap;
 	}
 
 	.contact a {
@@ -158,22 +145,19 @@ p {
 		text-decoration: none;
 	}
 
-	h2 {
-		font-weight: normal;
-		font-size: 2em;
-		margin-top: -0.2em;
+	/* questions*/
+
+	.container {
+		height: 90vh;
+	}
+
+	.q {
+		padding-right: 0.5em;
 	}
 
 	ul {
-	list-style-type: decimal;
-	font-size: 2em;
-	padding-left: 1.2em;
-	}
-
-	li a {
-		text-decoration: none;
-		color: black;
-		font-weight: normal;
+		padding-bottom: 0.5em;
+		padding-right: 0.5em;
 	}
 
 	li a:hover {
@@ -181,19 +165,13 @@ p {
 	}
 
 	li p {
-		font-weight: normal;
 		font-size: 2em;
 	}
 
-	.answers {
-		display: none;
-	}
-
-	.item {
-		width: 90%;
-	}
-
 }
+
+
+/*IPHONE SPECIAL*/
 
 @media (max-width:700px) {
 	.contact {
