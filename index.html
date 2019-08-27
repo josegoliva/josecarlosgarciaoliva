@@ -4,15 +4,24 @@
 	<title>Jose Carlos Garcia Oliva</title>
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+	<script src="js/form.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	
+<! This is the 'about you' part -->
+
+<! BIO -->
+
 	<footer>
 		<div class="bio">
 			<div class="name">
 				<h1>José Carlos García Oliva - born in Caracas, based in London.</h1>
 			</div>
+
+<! Links to cv, instagram and email -->
+
 			<div class="contactbox">
 				<div class="contact">
 					<div class="cv"><a class="foot" href="img/cv.pdf" target="_blank">cv</a></div>
@@ -22,8 +31,11 @@
 			</div>
 		</div>
 	</footer>
+
+
+<! Questions -->
+
 	<main>
-		<div><a class="phonemenu" href="index.html"><h2 class="menu">Back?</h2></a></div>
 		<div class="container">
 			<div class="item q">
 				<ul>
@@ -35,9 +47,9 @@
 					<li><a href="expireddate.html">?</a></li>
 					<li><a href="porotraparte.html">?</a></li>
 					<li>
-						<form action="mailto:bettybrunfaut@gmail.com" method="get" enctype="multipart/form-data" name="emailform">
-								<input class="fillbox" type="text" value="questions for me"> ?
-								<input type="submit" style="position: absolute; left: -9999px"/>
+						<form id="form">
+							<input class="fillbox" type="text" name="name" class="form-control" placeholder="Your question"> ?
+							<button type="submit" style="position: absolute; left: -9999px">Post &rarr;</button>
 						</form>
 					</li>
 				</ul>
