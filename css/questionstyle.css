@@ -25,9 +25,10 @@ body {
 footer {
 	position: fixed;
 	width: 100%;
-	bottom: 0em;
-	margin: 1em;
+	bottom: 0;
     z-index: 10;
+    margin: 1em;
+    background-color: white;
 }
 
 /* Bio*/
@@ -45,6 +46,7 @@ h1 {
 
 .name, .contactbox {
 	flex-grow: 1;
+	display: inline-block;
 }
 
 /* Contact*/
@@ -154,18 +156,19 @@ li a:hover {
 
 h3 {
 	font-size: 2.5vw;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.5vw;
 }
 
 h4 {
-	font-size: 1.5em;
+	font-size: 1.5vw;
+	margin-top: 0.5vw;
 	text-decoration: underline;
 	font-weight: normal;
 }
 
 .answers p {
-	font-size: 1.5em;
-	margin-bottom: 1em;
+	font-size: 1.5vw;
+	margin-bottom: 0.5vw;
 }
 
 p {
@@ -177,13 +180,15 @@ p {
 img {
 	width: 47vw;
 	height: auto;
-	margin-top: 1em;
+	margin-top: 1vw;
+	margin-bottom: 1vw;
 }
 
 /* slideshow*/
 
 .w3-display-container {
 	position: relative;
+
 }
 
 .w3-display-left {
@@ -216,7 +221,7 @@ img {
 
 iframe {
 	width: 48vw;
-	margin-bottom: 2em;
+	margin-bottom: 1vw;
 }
 
 
@@ -227,7 +232,6 @@ iframe {
 
 	.bio {
 		flex-wrap: wrap;
-		background-color: white;
 	}
 
 	.contact a {
@@ -244,14 +248,15 @@ iframe {
 		display: inline-block;
 		position: fixed;
 		text-decoration: none;
-		margin: 1em;
+		padding-left: 1em;
+		padding-top: 0.2em;
 		z-index: 9;
 	}
 
 	.menu {
 		color: lightgrey;
 		text-decoration: underline;
-		font-size: 1.5em;
+		font-size: 4.9vw;
 		margin-bottom: 1em;
 		font-weight: normal;
 	}
@@ -269,7 +274,7 @@ iframe {
 	}
 
 	.item {
-		width: 90%;
+		width: 100%;
 	}
 
 	ul {
@@ -279,7 +284,7 @@ iframe {
 	/*Answers*/
 
 	.answers {
-		padding-top: 3.5em;
+		padding-top: 6vw;
 	}
 
 	.answers::-webkit-scrollbar {
@@ -288,26 +293,30 @@ iframe {
 
 	h3 {
 		text-align: center;
-		font-size: 4.9vw;
+		font-size: 8vw;
+	}
+
+	h4 {
+		font-size: 5vw;
+	}
+
+	.answers p {
+		font-size: 5vw;
 	}
 
 	/*image*/
 
 	img {
-		width: 90vw;
+		width: 95vw;
+		margin-bottom: 8vw;
 		margin: auto;
-		display: block;
-	}
-
-	.zoom {
-		margin-bottom: 1em;
 	}
 
 	/*video*/
 
 	iframe {
 		width: 80vw;
-		margin-bottom: 2em;
+		margin-bottom: 2vw;
 		margin: auto;
 		display: block;
 	}
