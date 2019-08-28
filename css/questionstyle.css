@@ -285,6 +285,9 @@ iframe {
 
 	.answers {
 		padding-top: 6vw;
+		padding-left: 0;
+		padding-right: 0;
+		border-left: none;
 	}
 
 	.answers::-webkit-scrollbar {
