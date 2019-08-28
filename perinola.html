@@ -9,9 +9,9 @@
 	<meta charset="utf-8">
 <body>
 
-<! This is the 'about you' part -->
+<!-- This is the 'about you' part -->
 
-<! BIO -->
+<!-- BIO -->
 
 	<footer>
 		<div class="bio">
@@ -19,7 +19,7 @@
 				<h1>José Carlos García Oliva - born in Caracas, based in London.</h1>
 			</div>
 
-<! Links to cv, instagram and email -->
+<!-- Links to cv, instagram and email -->
 
 			<div class="contactbox">
 				<div class="contact">
@@ -33,14 +33,14 @@
 	
 	<main>
 
-<! For phone -->
+<!-- For phone -->
 		<div>
 			<a class="phonemenu" href="index.html">
 				<h2 class="menu">Back?</h2>
 			</a>
 		</div>
 
-<! Questions -->
+<!-- Questions -->
 
 		<div class="container">
 			<div class="item q">
@@ -56,22 +56,46 @@
 			</div>
 
 
-<! Answers -->
+<!-- Answers -->
 
 			<div class="item answers">
 				<div class="otherway">
-					<h3>Games People Play</h3> <! Title here -->
+					<h3>Games People Play</h3> <!-- Title here -->
 					
-					<div class="slideshow"> <! slideshow -->
-						<div class="slide"><img src="img/perinola/img01.jpg"></div>
-						<div class="slide"><img src="img/perinola/img02.jpg"></div>
-						<div class="slide"><img src="img/perinola/img03.jpg"></div>
+
+					<div class="w3-content w3-display-container"> <!-- img slideshow -->
+					  <img class="mySlides" src="img/perinola/img01.jpg" style="width:100%">
+					  <img class="mySlides" src="img/perinola/img02.jpg" style="width:100%">
+					  <img class="mySlides" src="img/perinola/img03.jpg" style="width:100%">
+
+					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 					</div>
 
-					<! video -->
+					<script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+					    x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+					</script>	
+
+					<!-- video -->
 					<iframe src="https://player.vimeo.com/video/355324171" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-					<! Text about piece -->
+					<!-- Text about piece -->
 
 					<h4>Specification of the piece:</h4>
 					<p>Projection of a video in a loop <br>

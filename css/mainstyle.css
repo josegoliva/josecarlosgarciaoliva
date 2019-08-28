@@ -6,8 +6,8 @@
 }
 
 html {
-	height: 100vw;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -87,7 +87,6 @@ h1 {
 .q {
 	overflow-y: auto;
 	width: 100%;
-	padding-right: 50%;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: none;
 }
@@ -98,7 +97,7 @@ h1 {
 
 ul {
 	list-style-type: decimal;
-	font-size: 3em;
+	font-size: 2.5vw;
 	padding-left: 1.5em;
 	padding-top: 0.2em;
 	padding-bottom: 1em;
@@ -158,6 +157,7 @@ p {
 	ul {
 		padding-bottom: 0.5em;
 		padding-right: 0.5em;
+		font-size: 4.9vw;
 	}
 
 	li a:hover {
