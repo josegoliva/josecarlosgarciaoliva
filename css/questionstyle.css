@@ -27,7 +27,8 @@ footer {
 	width: 100%;
 	bottom: 0;
     z-index: 10;
-    margin: 1em;
+    right: -1.5em;
+    padding-bottom: 1em;
     background-color: white;
 }
 
@@ -55,6 +56,7 @@ h1 {
 	display: flex;
 	justify-content: flex-end;
 	flex-wrap: nowrap;
+	float: right;
 }
 
 .contact a:hover {
@@ -230,8 +232,17 @@ iframe {
 @media (max-width:950px) {
 	/* footer*/
 
+	footer {
+		right: none;
+	}
+
 	.bio {
 		flex-wrap: wrap;
+		align-items: flex-end;
+	}
+
+	.contact {
+		left: 0;
 	}
 
 	.contact a {
@@ -310,9 +321,13 @@ iframe {
 	/*image*/
 
 	img {
-		width: 95vw;
-		margin-bottom: 8vw;
+		width: 100vw;
 		margin: auto;
+	}
+
+	.zoom {
+		margin-bottom: 2vw;
+		margin-top: 2vw;
 	}
 
 	/*video*/

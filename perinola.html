@@ -65,34 +65,10 @@
 					<h3>Games People Play</h3> <!-- Title here -->
 					
 
-					<div class="w3-content w3-display-container"> <!-- img slideshow -->
-					  <img class="mySlides" src="img/perinola/img01.jpg" style="width:100%">
-					  <img class="mySlides" src="img/perinola/img02.jpg" style="width:100%">
-					  <img class="mySlides" src="img/perinola/img03.jpg" style="width:100%">
-
-					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-					</div>
-
-					<script>
-					var slideIndex = 1;
-					showDivs(slideIndex);
-
-					function plusDivs(n) {
-					  showDivs(slideIndex += n);
-					}
-
-					function showDivs(n) {
-					  var i;
-					  var x = document.getElementsByClassName("mySlides");
-					  if (n > x.length) {slideIndex = 1}
-					  if (n < 1) {slideIndex = x.length}
-					  for (i = 0; i < x.length; i++) {
-					    x[i].style.display = "none";  
-					  }
-					  x[slideIndex-1].style.display = "block";  
-					}
-					</script>	
+					  <img src="img/perinola/img01.jpg">
+					  <img src="img/perinola/img02.jpg">
+					  <img src="img/perinola/img03.jpg">
+					  
 
 					<!-- video -->
 					<iframe src="https://player.vimeo.com/video/355324171" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
