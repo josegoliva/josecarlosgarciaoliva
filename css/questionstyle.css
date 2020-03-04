@@ -40,6 +40,22 @@ footer {
 	align-items: flex-end;
 }
 
+.bio-expanded {
+	max-width: 30em;
+	display: none;
+}
+.expanded .bio-expanded {
+	display: block;
+}
+
+.name-button {
+	appearance: none;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 h1 {
 	font-size: 1em;
 	font-weight: normal;
