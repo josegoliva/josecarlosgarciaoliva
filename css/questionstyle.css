@@ -226,6 +226,28 @@ iframe {
 	margin-bottom: 1vw;
 }
 
+/* LIGHTBOX */
+.lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(185, 185, 185, .6);
+	z-index: 1000;
+	opacity: 0;
+	pointer-events: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 100ms;
+}
+
+.lightbox.active {
+	pointer-events: all;
+	opacity: 1;
+}
 
 /* IPAD and IPHONE*/
 
