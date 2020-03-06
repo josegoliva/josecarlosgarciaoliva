@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let lightbox = document.querySelector('.lightbox');
     let nameButton = document.querySelector('.name-button');
     let bio = document.querySelector('.bio');
-
+    if (lightbox){
     for (let i = 0; i < images.length; i++) {
         images[i].addEventListener('click', function(e){
             let url = e.target.getAttribute('src');
@@ -15,8 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
     lightbox.addEventListener('click', function(){
         this.classList.remove('active')
     })
+    }
+    if (nameButton){
 
     nameButton.addEventListener('click', function(){
         bio.classList.toggle('expanded')
     })
+    }
 })
