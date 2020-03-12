@@ -379,11 +379,12 @@ iframe {
 
 @media (max-width:700px) {
 	
+	.bio {
+		flex-direction: column-reverse;
+	}
+	
 	.bio-expanded {
 		width: 80%;
-	}
-	.contact {
-		justify-content: flex-start;
 	}
 
 	.container {
