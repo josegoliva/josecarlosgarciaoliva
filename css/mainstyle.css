@@ -142,6 +142,10 @@ p {
 	.contact a:hover {
 		text-decoration: none;
 	}
+	
+	.bio-expanded {
+		max-width: 800px;
+	}
 
 	/* questions*/
 
@@ -175,6 +179,9 @@ p {
 @media (max-width:700px) {
 	.contact {
 		justify-content: flex-start;
+	}
+	.bio-expanded {
+		max-width: 600px;
 	}
 
 }
