@@ -279,6 +279,10 @@ iframe {
 		flex-wrap: wrap;
 		align-items: flex-end;
 	}
+	
+	.bio-expanded {
+		max-width: 800px;
+	}
 
 	.contact {
 		left: 0;
@@ -384,6 +388,9 @@ iframe {
 
 @media (max-width:700px) {
 	
+	.bio-expanded {
+		max-width: 600px;
+	}
 	.contact {
 		justify-content: flex-start;
 	}
