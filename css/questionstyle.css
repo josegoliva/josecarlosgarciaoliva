@@ -56,7 +56,7 @@ footer {
     border: 0;
     cursor: pointer;
     font-size: 15px;
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 h1 {
@@ -277,6 +277,10 @@ iframe {
         flex-direction: column;
     }
 
+	.name-button {
+		margin-bottom: .2em;
+	}
+
     .bio-expanded {
         max-width: 800px;
     }
@@ -323,7 +327,10 @@ iframe {
 
     .q {
         display: none;
-    }
+	}
+	.q.home {
+		display: block;
+	}
 
     .item {
         width: 100%;
