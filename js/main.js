@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let images = document.querySelectorAll('.answers img');
     let lightbox = document.querySelector('.lightbox');
     let nameButton = document.querySelector('.name-button');
-    let bio = document.querySelector('.bio');
+    let bio = document.querySelector('footer');
     if (lightbox){
     for (let i = 0; i < images.length; i++) {
         images[i].addEventListener('click', function(e){
