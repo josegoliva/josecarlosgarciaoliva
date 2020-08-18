@@ -80,6 +80,7 @@ h1 {
 
 .contact a:hover {
     text-decoration: underline;
+	color: lightgrey;
 }
 
 .index,
