@@ -200,7 +200,7 @@ p {
     hyphens: none;
 }
 
-/* link*/
+/* link Window Cleaner page*/
 
 a.one:link {
     text-decoration: none;
@@ -220,6 +220,8 @@ a.one:link {
     text-decoration: none;
   }
 
+
+/* link standard*/
 
   a.two:link {
     text-decoration: none;
