@@ -202,20 +202,20 @@ p {
 
 /* link*/
 
-a:link {
+a.one:link {
     text-decoration: none;
   }
   
-  a:visited {
+  a.one:visited {
     text-decoration: none;
   }
   
-  a:hover {
+  a.one:hover {
     color: red;
     text-decoration: none;
   }
   
-  a:active {
+  a.one:active {
     color: red;
     text-decoration: none;
   }
