@@ -79,8 +79,9 @@ h1 {
 }
 
 .contact a:hover {
+    color: black;
     text-decoration: underline;
-	color: black;
+
 }
 
 .index,
