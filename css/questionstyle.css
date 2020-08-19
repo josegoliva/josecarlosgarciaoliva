@@ -207,6 +207,7 @@ a:link {
   }
   
   a:visited {
+    color: blue;
     text-decoration: none;
   }
   
@@ -222,12 +223,12 @@ a:link {
 
 
   a.two:link {
-    color: lightgrey;
+    color: blue;
     text-decoration: none;
   }
   
   a.two:visited {
-    color: lightgrey;
+    color: blue;
     text-decoration: none;
   }
   
