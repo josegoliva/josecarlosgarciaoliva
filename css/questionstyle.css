@@ -148,6 +148,10 @@ tr a {
     	font-weight: normal;
 }
 
+tr a:hover {
+    	color: lightgrey;
+}
+
 ul {
     list-style-type: none;
     list-style-position: inside;
