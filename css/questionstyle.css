@@ -85,7 +85,6 @@ h1 {
 }
 
 .index,
-.windowcleaner,
 .drawings, 
 .cv,
 .insta {
@@ -135,28 +134,8 @@ h1 {
     display: none;
 }
 
-.indexdates {
-	font-size: 2.5vw;
-	margin: 0;
-   	padding: 0.3em;
-}
-
-td {
-	padding-right: 0.5em;
-}
-
-td a {
-	text-decoration: none;
-    	color: black;
-    	font-weight: normal;
-}
-
-td a:hover {
-    	color: lightgrey;
-}
-
 ul {
-    list-style-type: none;
+    list-style-type: decimal;
     list-style-position: inside;
     font-size: 2.5vw;
     padding: 0;
@@ -403,7 +382,7 @@ iframe {
         width: 100%;
     }
 
-    .indexdates {
+    ul {
         font-size: 4.9vw;
     }
 
