@@ -136,16 +136,21 @@ h1 {
 
 .indexdates {
 	font-size: 2.5vw;
+	margin: 0;
    	padding: 1em;
 }
 
-tr a {
+td {
+	padding-right: 0.5em;
+}
+
+td a {
 	text-decoration: none;
     	color: black;
     	font-weight: normal;
 }
 
-tr a:hover {
+td a:hover {
     	color: lightgrey;
 }
 
