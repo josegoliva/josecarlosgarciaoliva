@@ -159,6 +159,10 @@ li a:hover {
     color: white;
 }
 
+.thisone:hover {
+    color: white;
+}
+
 /* Answers */
 
 .answers {
