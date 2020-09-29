@@ -140,6 +140,9 @@ h1 {
     	margin-left: 0.2em;
    	margin-top: 0.2em;
     	margin-bottom: 1em;
+}
+
+tr a {
 	text-decoration: none;
     	color: black;
     	font-weight: normal;
